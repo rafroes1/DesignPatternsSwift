@@ -17,6 +17,14 @@
 		897BE6632B02687500E7C9F5 /* PersonBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897BE6622B02687500E7C9F5 /* PersonBuilder.swift */; };
 		897BE6652B0268FA00E7C9F5 /* PersonAddressBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897BE6642B0268FA00E7C9F5 /* PersonAddressBuilder.swift */; };
 		897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897BE6662B0269AE00E7C9F5 /* PersonWorkBuilder.swift */; };
+		89C7BD9D2B02A0920042DA11 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BD9C2B02A0920042DA11 /* Point.swift */; };
+		89C7BD9F2B02A1F70042DA11 /* PointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BD9E2B02A1F70042DA11 /* PointFactory.swift */; };
+		89C7BDA22B02A6170042DA11 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDA12B02A6170042DA11 /* Protocols.swift */; };
+		89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDA32B02A66B0042DA11 /* Tea.swift */; };
+		89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDA52B02A6920042DA11 /* Coffee.swift */; };
+		89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDA72B02A6C70042DA11 /* TeaFactory.swift */; };
+		89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDA92B02A6FC0042DA11 /* CoffeeFactory.swift */; };
+		89C7BDAC2B02A7770042DA11 /* HotDrinkMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDAB2B02A7770042DA11 /* HotDrinkMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,14 @@
 		897BE6622B02687500E7C9F5 /* PersonBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonBuilder.swift; sourceTree = "<group>"; };
 		897BE6642B0268FA00E7C9F5 /* PersonAddressBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAddressBuilder.swift; sourceTree = "<group>"; };
 		897BE6662B0269AE00E7C9F5 /* PersonWorkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonWorkBuilder.swift; sourceTree = "<group>"; };
+		89C7BD9C2B02A0920042DA11 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		89C7BD9E2B02A1F70042DA11 /* PointFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointFactory.swift; sourceTree = "<group>"; };
+		89C7BDA12B02A6170042DA11 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		89C7BDA32B02A66B0042DA11 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
+		89C7BDA52B02A6920042DA11 /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		89C7BDA72B02A6C70042DA11 /* TeaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaFactory.swift; sourceTree = "<group>"; };
+		89C7BDA92B02A6FC0042DA11 /* CoffeeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeFactory.swift; sourceTree = "<group>"; };
+		89C7BDAB2B02A7770042DA11 /* HotDrinkMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotDrinkMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,7 @@
 		897BE6572B025FEB00E7C9F5 /* CreationalPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BD9A2B029F210042DA11 /* Factories */,
 				897BE6582B02612900E7C9F5 /* Builder */,
 			);
 			path = CreationalPatterns;
@@ -90,8 +107,8 @@
 		897BE6582B02612900E7C9F5 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				897BE65F2B02679F00E7C9F5 /* PersonBuilder */,
-				897BE65E2B02679400E7C9F5 /* HtmlBuilder */,
+				897BE65F2B02679F00E7C9F5 /* Person Builder */,
+				897BE65E2B02679400E7C9F5 /* Html Builder */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -105,16 +122,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		897BE65E2B02679400E7C9F5 /* HtmlBuilder */ = {
+		897BE65E2B02679400E7C9F5 /* Html Builder */ = {
 			isa = PBXGroup;
 			children = (
 				897BE65B2B0263C300E7C9F5 /* HtmlBuilder.swift */,
 				897BE6592B02613900E7C9F5 /* HtmlElement.swift */,
 			);
-			path = HtmlBuilder;
+			path = "Html Builder";
 			sourceTree = "<group>";
 		};
-		897BE65F2B02679F00E7C9F5 /* PersonBuilder */ = {
+		897BE65F2B02679F00E7C9F5 /* Person Builder */ = {
 			isa = PBXGroup;
 			children = (
 				897BE6602B0267C100E7C9F5 /* Person.swift */,
@@ -122,7 +139,38 @@
 				897BE6642B0268FA00E7C9F5 /* PersonAddressBuilder.swift */,
 				897BE6662B0269AE00E7C9F5 /* PersonWorkBuilder.swift */,
 			);
-			path = PersonBuilder;
+			path = "Person Builder";
+			sourceTree = "<group>";
+		};
+		89C7BD9A2B029F210042DA11 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDA02B02A43F0042DA11 /* Abstract Factory */,
+				89C7BD9B2B02A0740042DA11 /* Concrete Factory */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		89C7BD9B2B02A0740042DA11 /* Concrete Factory */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BD9C2B02A0920042DA11 /* Point.swift */,
+				89C7BD9E2B02A1F70042DA11 /* PointFactory.swift */,
+			);
+			path = "Concrete Factory";
+			sourceTree = "<group>";
+		};
+		89C7BDA02B02A43F0042DA11 /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDA12B02A6170042DA11 /* Protocols.swift */,
+				89C7BDA32B02A66B0042DA11 /* Tea.swift */,
+				89C7BDA52B02A6920042DA11 /* Coffee.swift */,
+				89C7BDA72B02A6C70042DA11 /* TeaFactory.swift */,
+				89C7BDA92B02A6FC0042DA11 /* CoffeeFactory.swift */,
+				89C7BDAB2B02A7770042DA11 /* HotDrinkMachine.swift */,
+			);
+			path = "Abstract Factory";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,9 +246,17 @@
 				897BE6652B0268FA00E7C9F5 /* PersonAddressBuilder.swift in Sources */,
 				897BE6632B02687500E7C9F5 /* PersonBuilder.swift in Sources */,
 				897BE6612B0267C100E7C9F5 /* Person.swift in Sources */,
+				89C7BDA22B02A6170042DA11 /* Protocols.swift in Sources */,
+				89C7BD9F2B02A1F70042DA11 /* PointFactory.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
+				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
 				897BE65C2B0263C300E7C9F5 /* HtmlBuilder.swift in Sources */,
+				89C7BDAC2B02A7770042DA11 /* HotDrinkMachine.swift in Sources */,
+				89C7BD9D2B02A0920042DA11 /* Point.swift in Sources */,
+				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
+				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
+				89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */,
 				897BE65A2B02613900E7C9F5 /* HtmlElement.swift in Sources */,
 				897BE64A2B025F7C00E7C9F5 /* DesignPatternsApp.swift in Sources */,
 			);
