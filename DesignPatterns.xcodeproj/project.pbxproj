@@ -28,6 +28,8 @@
 		89C7BDAF2B02CFF50042DA11 /* Copying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDAE2B02CFF50042DA11 /* Copying.swift */; };
 		89C7BDB12B02D02C0042DA11 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB02B02D02C0042DA11 /* Address.swift */; };
 		89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB22B02D0B80042DA11 /* Employee.swift */; };
+		89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB52B06D7190042DA11 /* SingletonDatabase.swift */; };
+		89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB72B06DA650042DA11 /* Monostate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		89C7BDAE2B02CFF50042DA11 /* Copying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copying.swift; sourceTree = "<group>"; };
 		89C7BDB02B02D02C0042DA11 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		89C7BDB22B02D0B80042DA11 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		89C7BDB52B06D7190042DA11 /* SingletonDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonDatabase.swift; sourceTree = "<group>"; };
+		89C7BDB72B06DA650042DA11 /* Monostate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monostate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 		897BE6572B025FEB00E7C9F5 /* CreationalPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BDB42B06D6720042DA11 /* Singleton */,
 				89C7BDAD2B02C9100042DA11 /* Prototype */,
 				89C7BD9A2B029F210042DA11 /* Factories */,
 				897BE6582B02612900E7C9F5 /* Builder */,
@@ -190,6 +195,15 @@
 			path = Prototype;
 			sourceTree = "<group>";
 		};
+		89C7BDB42B06D6720042DA11 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDB52B06D7190042DA11 /* SingletonDatabase.swift */,
+				89C7BDB72B06DA650042DA11 /* Monostate.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,6 +284,8 @@
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
+				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
+				89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */,
 				897BE65C2B0263C300E7C9F5 /* HtmlBuilder.swift in Sources */,
 				89C7BDAC2B02A7770042DA11 /* HotDrinkMachine.swift in Sources */,
 				89C7BD9D2B02A0920042DA11 /* Point.swift in Sources */,
