@@ -35,6 +35,11 @@
 		89C7BDC02B07ADF30042DA11 /* VectorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDBF2B07ADF30042DA11 /* VectorObject.swift */; };
 		89C7BDC22B07AF950042DA11 /* VectorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC12B07AF950042DA11 /* VectorRectangle.swift */; };
 		89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */; };
+		89C7BDC72B07B5E80042DA11 /* RendererProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC62B07B5E80042DA11 /* RendererProtocol.swift */; };
+		89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC82B07B61D0042DA11 /* VectorRenderer.swift */; };
+		89C7BDCB2B07B66B0042DA11 /* RasterRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCA2B07B66B0042DA11 /* RasterRenderer.swift */; };
+		89C7BDCD2B07B6A90042DA11 /* ShapeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCC2B07B6A90042DA11 /* ShapeProtocol.swift */; };
+		89C7BDCF2B07B6C70042DA11 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCE2B07B6C70042DA11 /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +72,11 @@
 		89C7BDBF2B07ADF30042DA11 /* VectorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorObject.swift; sourceTree = "<group>"; };
 		89C7BDC12B07AF950042DA11 /* VectorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorRectangle.swift; sourceTree = "<group>"; };
 		89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineToPointAdapter.swift; sourceTree = "<group>"; };
+		89C7BDC62B07B5E80042DA11 /* RendererProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RendererProtocol.swift; sourceTree = "<group>"; };
+		89C7BDC82B07B61D0042DA11 /* VectorRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorRenderer.swift; sourceTree = "<group>"; };
+		89C7BDCA2B07B66B0042DA11 /* RasterRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasterRenderer.swift; sourceTree = "<group>"; };
+		89C7BDCC2B07B6A90042DA11 /* ShapeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeProtocol.swift; sourceTree = "<group>"; };
+		89C7BDCE2B07B6C70042DA11 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +228,7 @@
 		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BDC52B07B5820042DA11 /* Bridge */,
 				89C7BDBA2B07AC680042DA11 /* Adapter */,
 			);
 			path = StructuralPatterns;
@@ -233,6 +244,18 @@
 				89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		89C7BDC52B07B5820042DA11 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDC62B07B5E80042DA11 /* RendererProtocol.swift */,
+				89C7BDC82B07B61D0042DA11 /* VectorRenderer.swift */,
+				89C7BDCA2B07B66B0042DA11 /* RasterRenderer.swift */,
+				89C7BDCC2B07B6A90042DA11 /* ShapeProtocol.swift */,
+				89C7BDCE2B07B6C70042DA11 /* Circle.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C7BDB12B02D02C0042DA11 /* Address.swift in Sources */,
+				89C7BDCB2B07B66B0042DA11 /* RasterRenderer.swift in Sources */,
 				897BE6652B0268FA00E7C9F5 /* PersonAddressBuilder.swift in Sources */,
 				897BE6632B02687500E7C9F5 /* PersonBuilder.swift in Sources */,
 				897BE6612B0267C100E7C9F5 /* Person.swift in Sources */,
@@ -313,6 +337,8 @@
 				89C7BD9F2B02A1F70042DA11 /* PointFactory.swift in Sources */,
 				89C7BDAF2B02CFF50042DA11 /* Copying.swift in Sources */,
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
+				89C7BDC72B07B5E80042DA11 /* RendererProtocol.swift in Sources */,
+				89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
 				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
@@ -328,7 +354,9 @@
 				89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */,
 				89C7BDBE2B07AD9F0042DA11 /* Line.swift in Sources */,
 				897BE65A2B02613900E7C9F5 /* HtmlElement.swift in Sources */,
+				89C7BDCF2B07B6C70042DA11 /* Circle.swift in Sources */,
 				897BE64A2B025F7C00E7C9F5 /* DesignPatternsApp.swift in Sources */,
+				89C7BDCD2B07B6A90042DA11 /* ShapeProtocol.swift in Sources */,
 				89C7BDC22B07AF950042DA11 /* VectorRectangle.swift in Sources */,
 				89C7BDC02B07ADF30042DA11 /* VectorObject.swift in Sources */,
 			);
