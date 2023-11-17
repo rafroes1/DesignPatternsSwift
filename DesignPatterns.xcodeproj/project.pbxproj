@@ -30,6 +30,11 @@
 		89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB22B02D0B80042DA11 /* Employee.swift */; };
 		89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB52B06D7190042DA11 /* SingletonDatabase.swift */; };
 		89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDB72B06DA650042DA11 /* Monostate.swift */; };
+		89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDBB2B07AD480042DA11 /* Point.swift */; };
+		89C7BDBE2B07AD9F0042DA11 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDBD2B07AD9F0042DA11 /* Line.swift */; };
+		89C7BDC02B07ADF30042DA11 /* VectorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDBF2B07ADF30042DA11 /* VectorObject.swift */; };
+		89C7BDC22B07AF950042DA11 /* VectorRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC12B07AF950042DA11 /* VectorRectangle.swift */; };
+		89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +62,11 @@
 		89C7BDB22B02D0B80042DA11 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		89C7BDB52B06D7190042DA11 /* SingletonDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonDatabase.swift; sourceTree = "<group>"; };
 		89C7BDB72B06DA650042DA11 /* Monostate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monostate.swift; sourceTree = "<group>"; };
+		89C7BDBB2B07AD480042DA11 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		89C7BDBD2B07AD9F0042DA11 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		89C7BDBF2B07ADF30042DA11 /* VectorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorObject.swift; sourceTree = "<group>"; };
+		89C7BDC12B07AF950042DA11 /* VectorRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorRectangle.swift; sourceTree = "<group>"; };
+		89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineToPointAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				897BE65D2B0265CD00E7C9F5 /* App */,
-				897BE6572B025FEB00E7C9F5 /* CreationalPatterns */,
 				897BE64D2B025F7C00E7C9F5 /* Assets.xcassets */,
+				897BE6572B025FEB00E7C9F5 /* CreationalPatterns */,
 				897BE64F2B025F7C00E7C9F5 /* Preview Content */,
+				89C7BDB92B07AC550042DA11 /* StructuralPatterns */,
 			);
 			path = DesignPatterns;
 			sourceTree = "<group>";
@@ -108,10 +119,10 @@
 		897BE6572B025FEB00E7C9F5 /* CreationalPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				89C7BDB42B06D6720042DA11 /* Singleton */,
-				89C7BDAD2B02C9100042DA11 /* Prototype */,
-				89C7BD9A2B029F210042DA11 /* Factories */,
 				897BE6582B02612900E7C9F5 /* Builder */,
+				89C7BD9A2B029F210042DA11 /* Factories */,
+				89C7BDAD2B02C9100042DA11 /* Prototype */,
+				89C7BDB42B06D6720042DA11 /* Singleton */,
 			);
 			path = CreationalPatterns;
 			sourceTree = "<group>";
@@ -204,6 +215,26 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
+		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDBA2B07AC680042DA11 /* Adapter */,
+			);
+			path = StructuralPatterns;
+			sourceTree = "<group>";
+		};
+		89C7BDBA2B07AC680042DA11 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDBB2B07AD480042DA11 /* Point.swift */,
+				89C7BDBD2B07AD9F0042DA11 /* Line.swift */,
+				89C7BDBF2B07ADF30042DA11 /* VectorObject.swift */,
+				89C7BDC12B07AF950042DA11 /* VectorRectangle.swift */,
+				89C7BDC32B07B0700042DA11 /* LineToPointAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +314,7 @@
 				89C7BDAF2B02CFF50042DA11 /* Copying.swift in Sources */,
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
+				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
 				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
 				89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */,
@@ -292,9 +324,13 @@
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
+				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
 				89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */,
+				89C7BDBE2B07AD9F0042DA11 /* Line.swift in Sources */,
 				897BE65A2B02613900E7C9F5 /* HtmlElement.swift in Sources */,
 				897BE64A2B025F7C00E7C9F5 /* DesignPatternsApp.swift in Sources */,
+				89C7BDC22B07AF950042DA11 /* VectorRectangle.swift in Sources */,
+				89C7BDC02B07ADF30042DA11 /* VectorObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
