@@ -40,6 +40,9 @@
 		89C7BDCB2B07B66B0042DA11 /* RasterRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCA2B07B66B0042DA11 /* RasterRenderer.swift */; };
 		89C7BDCD2B07B6A90042DA11 /* ShapeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCC2B07B6A90042DA11 /* ShapeProtocol.swift */; };
 		89C7BDCF2B07B6C70042DA11 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDCE2B07B6C70042DA11 /* Circle.swift */; };
+		89C7BDD42B10E2010042DA11 /* GraphicObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDD32B10E2010042DA11 /* GraphicObject.swift */; };
+		89C7BDD62B10E22C0042DA11 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDD52B10E22C0042DA11 /* Circle.swift */; };
+		89C7BDD82B10E2590042DA11 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDD72B10E2590042DA11 /* Square.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +80,9 @@
 		89C7BDCA2B07B66B0042DA11 /* RasterRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasterRenderer.swift; sourceTree = "<group>"; };
 		89C7BDCC2B07B6A90042DA11 /* ShapeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeProtocol.swift; sourceTree = "<group>"; };
 		89C7BDCE2B07B6C70042DA11 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		89C7BDD32B10E2010042DA11 /* GraphicObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicObject.swift; sourceTree = "<group>"; };
+		89C7BDD52B10E22C0042DA11 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		89C7BDD72B10E2590042DA11 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BDD02B10E1A90042DA11 /* Composite */,
 				89C7BDC52B07B5820042DA11 /* Bridge */,
 				89C7BDBA2B07AC680042DA11 /* Adapter */,
 			);
@@ -256,6 +263,16 @@
 				89C7BDCE2B07B6C70042DA11 /* Circle.swift */,
 			);
 			path = Bridge;
+			sourceTree = "<group>";
+		};
+		89C7BDD02B10E1A90042DA11 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDD32B10E2010042DA11 /* GraphicObject.swift */,
+				89C7BDD52B10E22C0042DA11 /* Circle.swift */,
+				89C7BDD72B10E2590042DA11 /* Square.swift */,
+			);
+			path = Composite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +348,7 @@
 				89C7BDB12B02D02C0042DA11 /* Address.swift in Sources */,
 				89C7BDCB2B07B66B0042DA11 /* RasterRenderer.swift in Sources */,
 				897BE6652B0268FA00E7C9F5 /* PersonAddressBuilder.swift in Sources */,
+				89C7BDD42B10E2010042DA11 /* GraphicObject.swift in Sources */,
 				897BE6632B02687500E7C9F5 /* PersonBuilder.swift in Sources */,
 				897BE6612B0267C100E7C9F5 /* Person.swift in Sources */,
 				89C7BDA22B02A6170042DA11 /* Protocols.swift in Sources */,
@@ -344,10 +362,12 @@
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
 				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
 				89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */,
+				89C7BDD62B10E22C0042DA11 /* Circle.swift in Sources */,
 				897BE65C2B0263C300E7C9F5 /* HtmlBuilder.swift in Sources */,
 				89C7BDAC2B02A7770042DA11 /* HotDrinkMachine.swift in Sources */,
 				89C7BD9D2B02A0920042DA11 /* Point.swift in Sources */,
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
+				89C7BDD82B10E2590042DA11 /* Square.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
