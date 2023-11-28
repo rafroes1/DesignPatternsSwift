@@ -54,6 +54,10 @@
 		89C7BDEE2B14CF180042DA11 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDED2B14CF180042DA11 /* Console.swift */; };
 		89C7BDF12B161E150042DA11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF02B161E150042DA11 /* User.swift */; };
 		89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF22B161E200042DA11 /* FlyweightUser.swift */; };
+		89C7BDF72B1621CD0042DA11 /* VehicleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF62B1621CD0042DA11 /* VehicleProtocol.swift */; };
+		89C7BDF92B1621E80042DA11 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF82B1621E80042DA11 /* Car.swift */; };
+		89C7BDFB2B1622020042DA11 /* CarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDFA2B1622020042DA11 /* CarProxy.swift */; };
+		89C7BDFD2B1622150042DA11 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDFC2B1622150042DA11 /* Driver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +109,10 @@
 		89C7BDED2B14CF180042DA11 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
 		89C7BDF02B161E150042DA11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		89C7BDF22B161E200042DA11 /* FlyweightUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightUser.swift; sourceTree = "<group>"; };
+		89C7BDF62B1621CD0042DA11 /* VehicleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleProtocol.swift; sourceTree = "<group>"; };
+		89C7BDF82B1621E80042DA11 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		89C7BDFA2B1622020042DA11 /* CarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarProxy.swift; sourceTree = "<group>"; };
+		89C7BDFC2B1622150042DA11 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +264,7 @@
 		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BDF42B1620B30042DA11 /* Proxy */,
 				89C7BDEF2B161E0A0042DA11 /* Flyweight */,
 				89C7BDE82B14CD500042DA11 /* Facade */,
 				89C7BDD92B14C73E0042DA11 /* Decorator */,
@@ -348,6 +357,17 @@
 			path = Flyweight;
 			sourceTree = "<group>";
 		};
+		89C7BDF42B1620B30042DA11 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDF62B1621CD0042DA11 /* VehicleProtocol.swift */,
+				89C7BDF82B1621E80042DA11 /* Car.swift */,
+				89C7BDFA2B1622020042DA11 /* CarProxy.swift */,
+				89C7BDFC2B1622150042DA11 /* Driver.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -419,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C7BDB12B02D02C0042DA11 /* Address.swift in Sources */,
+				89C7BDFD2B1622150042DA11 /* Driver.swift in Sources */,
 				89C7BDDF2B14CAE00042DA11 /* DecoratorShapeProtocol.swift in Sources */,
 				89C7BDCB2B07B66B0042DA11 /* RasterRenderer.swift in Sources */,
 				897BE6652B0268FA00E7C9F5 /* PersonAddressBuilder.swift in Sources */,
@@ -446,10 +467,12 @@
 				89C7BDE52B14CB4B0042DA11 /* ColoredShape.swift in Sources */,
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
 				89C7BDD82B10E2590042DA11 /* Square.swift in Sources */,
+				89C7BDF72B1621CD0042DA11 /* VehicleProtocol.swift in Sources */,
 				89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
+				89C7BDFB2B1622020042DA11 /* CarProxy.swift in Sources */,
 				89C7BDE32B14CB320042DA11 /* DecoratorSquare.swift in Sources */,
 				89C7BDF12B161E150042DA11 /* User.swift in Sources */,
 				89C7BDEA2B14CEE50042DA11 /* Buffer.swift in Sources */,
@@ -459,6 +482,7 @@
 				89C7BDCF2B07B6C70042DA11 /* Circle.swift in Sources */,
 				897BE64A2B025F7C00E7C9F5 /* DesignPatternsApp.swift in Sources */,
 				89C7BDCD2B07B6A90042DA11 /* ShapeProtocol.swift in Sources */,
+				89C7BDF92B1621E80042DA11 /* Car.swift in Sources */,
 				89C7BDE72B14CB720042DA11 /* TransparentShape.swift in Sources */,
 				89C7BDE12B14CB020042DA11 /* DecoratorCircle.swift in Sources */,
 				89C7BDC22B07AF950042DA11 /* VectorRectangle.swift in Sources */,
