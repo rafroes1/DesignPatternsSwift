@@ -52,6 +52,8 @@
 		89C7BDEA2B14CEE50042DA11 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDE92B14CEE50042DA11 /* Buffer.swift */; };
 		89C7BDEC2B14CF040042DA11 /* ViewPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDEB2B14CF040042DA11 /* ViewPort.swift */; };
 		89C7BDEE2B14CF180042DA11 /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDED2B14CF180042DA11 /* Console.swift */; };
+		89C7BDF12B161E150042DA11 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF02B161E150042DA11 /* User.swift */; };
+		89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF22B161E200042DA11 /* FlyweightUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +103,8 @@
 		89C7BDE92B14CEE50042DA11 /* Buffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buffer.swift; sourceTree = "<group>"; };
 		89C7BDEB2B14CF040042DA11 /* ViewPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPort.swift; sourceTree = "<group>"; };
 		89C7BDED2B14CF180042DA11 /* Console.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Console.swift; sourceTree = "<group>"; };
+		89C7BDF02B161E150042DA11 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89C7BDF22B161E200042DA11 /* FlyweightUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,7 @@
 		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BDEF2B161E0A0042DA11 /* Flyweight */,
 				89C7BDE82B14CD500042DA11 /* Facade */,
 				89C7BDD92B14C73E0042DA11 /* Decorator */,
 				89C7BDD02B10E1A90042DA11 /* Composite */,
@@ -332,6 +337,15 @@
 				89C7BDED2B14CF180042DA11 /* Console.swift */,
 			);
 			path = Facade;
+			sourceTree = "<group>";
+		};
+		89C7BDEF2B161E0A0042DA11 /* Flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDF02B161E150042DA11 /* User.swift */,
+				89C7BDF22B161E200042DA11 /* FlyweightUser.swift */,
+			);
+			path = Flyweight;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,10 +446,12 @@
 				89C7BDE52B14CB4B0042DA11 /* ColoredShape.swift in Sources */,
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
 				89C7BDD82B10E2590042DA11 /* Square.swift in Sources */,
+				89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
 				89C7BDE32B14CB320042DA11 /* DecoratorSquare.swift in Sources */,
+				89C7BDF12B161E150042DA11 /* User.swift in Sources */,
 				89C7BDEA2B14CEE50042DA11 /* Buffer.swift in Sources */,
 				89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */,
 				89C7BDBE2B07AD9F0042DA11 /* Line.swift in Sources */,
