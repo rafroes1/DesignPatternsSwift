@@ -58,6 +58,11 @@
 		89C7BDF92B1621E80042DA11 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDF82B1621E80042DA11 /* Car.swift */; };
 		89C7BDFB2B1622020042DA11 /* CarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDFA2B1622020042DA11 /* CarProxy.swift */; };
 		89C7BDFD2B1622150042DA11 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BDFC2B1622150042DA11 /* Driver.swift */; };
+		89C7BE012B175F450042DA11 /* Creature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE002B175F450042DA11 /* Creature.swift */; };
+		89C7BE032B175F5D0042DA11 /* CreatureModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE022B175F5D0042DA11 /* CreatureModifier.swift */; };
+		89C7BE052B175F890042DA11 /* DoubleAttackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE042B175F890042DA11 /* DoubleAttackModifier.swift */; };
+		89C7BE072B175FA30042DA11 /* IncreaseDefenseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE062B175FA30042DA11 /* IncreaseDefenseModifier.swift */; };
+		89C7BE092B175FC40042DA11 /* NoBonusModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +118,11 @@
 		89C7BDF82B1621E80042DA11 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		89C7BDFA2B1622020042DA11 /* CarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarProxy.swift; sourceTree = "<group>"; };
 		89C7BDFC2B1622150042DA11 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		89C7BE002B175F450042DA11 /* Creature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creature.swift; sourceTree = "<group>"; };
+		89C7BE022B175F5D0042DA11 /* CreatureModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatureModifier.swift; sourceTree = "<group>"; };
+		89C7BE042B175F890042DA11 /* DoubleAttackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleAttackModifier.swift; sourceTree = "<group>"; };
+		89C7BE062B175FA30042DA11 /* IncreaseDefenseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseDefenseModifier.swift; sourceTree = "<group>"; };
+		89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBonusModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 			children = (
 				897BE65D2B0265CD00E7C9F5 /* App */,
 				897BE64D2B025F7C00E7C9F5 /* Assets.xcassets */,
+				89C7BDFE2B175F070042DA11 /* Behavioral Patterns */,
 				897BE6572B025FEB00E7C9F5 /* CreationalPatterns */,
 				897BE64F2B025F7C00E7C9F5 /* Preview Content */,
 				89C7BDB92B07AC550042DA11 /* StructuralPatterns */,
@@ -264,13 +275,13 @@
 		89C7BDB92B07AC550042DA11 /* StructuralPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				89C7BDF42B1620B30042DA11 /* Proxy */,
-				89C7BDEF2B161E0A0042DA11 /* Flyweight */,
-				89C7BDE82B14CD500042DA11 /* Facade */,
-				89C7BDD92B14C73E0042DA11 /* Decorator */,
-				89C7BDD02B10E1A90042DA11 /* Composite */,
-				89C7BDC52B07B5820042DA11 /* Bridge */,
 				89C7BDBA2B07AC680042DA11 /* Adapter */,
+				89C7BDC52B07B5820042DA11 /* Bridge */,
+				89C7BDD02B10E1A90042DA11 /* Composite */,
+				89C7BDD92B14C73E0042DA11 /* Decorator */,
+				89C7BDE82B14CD500042DA11 /* Facade */,
+				89C7BDEF2B161E0A0042DA11 /* Flyweight */,
+				89C7BDF42B1620B30042DA11 /* Proxy */,
 			);
 			path = StructuralPatterns;
 			sourceTree = "<group>";
@@ -368,6 +379,26 @@
 			path = Proxy;
 			sourceTree = "<group>";
 		};
+		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BDFF2B175F270042DA11 /* Chain of Responsability */,
+			);
+			path = "Behavioral Patterns";
+			sourceTree = "<group>";
+		};
+		89C7BDFF2B175F270042DA11 /* Chain of Responsability */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE002B175F450042DA11 /* Creature.swift */,
+				89C7BE022B175F5D0042DA11 /* CreatureModifier.swift */,
+				89C7BE042B175F890042DA11 /* DoubleAttackModifier.swift */,
+				89C7BE062B175FA30042DA11 /* IncreaseDefenseModifier.swift */,
+				89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */,
+			);
+			path = "Chain of Responsability";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,6 +480,7 @@
 				897BE6612B0267C100E7C9F5 /* Person.swift in Sources */,
 				89C7BDEE2B14CF180042DA11 /* Console.swift in Sources */,
 				89C7BDA22B02A6170042DA11 /* Protocols.swift in Sources */,
+				89C7BE052B175F890042DA11 /* DoubleAttackModifier.swift in Sources */,
 				89C7BD9F2B02A1F70042DA11 /* PointFactory.swift in Sources */,
 				89C7BDAF2B02CFF50042DA11 /* Copying.swift in Sources */,
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
@@ -460,6 +492,7 @@
 				89C7BDDC2B14C7930042DA11 /* CodeBuilder.swift in Sources */,
 				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
 				89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */,
+				89C7BE092B175FC40042DA11 /* NoBonusModifier.swift in Sources */,
 				89C7BDD62B10E22C0042DA11 /* Circle.swift in Sources */,
 				897BE65C2B0263C300E7C9F5 /* HtmlBuilder.swift in Sources */,
 				89C7BDAC2B02A7770042DA11 /* HotDrinkMachine.swift in Sources */,
@@ -468,7 +501,9 @@
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
 				89C7BDD82B10E2590042DA11 /* Square.swift in Sources */,
 				89C7BDF72B1621CD0042DA11 /* VehicleProtocol.swift in Sources */,
+				89C7BE072B175FA30042DA11 /* IncreaseDefenseModifier.swift in Sources */,
 				89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */,
+				89C7BE032B175F5D0042DA11 /* CreatureModifier.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
@@ -476,6 +511,7 @@
 				89C7BDE32B14CB320042DA11 /* DecoratorSquare.swift in Sources */,
 				89C7BDF12B161E150042DA11 /* User.swift in Sources */,
 				89C7BDEA2B14CEE50042DA11 /* Buffer.swift in Sources */,
+				89C7BE012B175F450042DA11 /* Creature.swift in Sources */,
 				89C7BDA62B02A6920042DA11 /* Coffee.swift in Sources */,
 				89C7BDBE2B07AD9F0042DA11 /* Line.swift in Sources */,
 				897BE65A2B02613900E7C9F5 /* HtmlElement.swift in Sources */,
