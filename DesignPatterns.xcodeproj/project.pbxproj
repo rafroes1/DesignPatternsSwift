@@ -63,6 +63,9 @@
 		89C7BE052B175F890042DA11 /* DoubleAttackModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE042B175F890042DA11 /* DoubleAttackModifier.swift */; };
 		89C7BE072B175FA30042DA11 /* IncreaseDefenseModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE062B175FA30042DA11 /* IncreaseDefenseModifier.swift */; };
 		89C7BE092B175FC40042DA11 /* NoBonusModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */; };
+		89C7BE0C2B1764140042DA11 /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE0B2B1764140042DA11 /* BankAccount.swift */; };
+		89C7BE0E2B1764580042DA11 /* BankAccountCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE0D2B1764580042DA11 /* BankAccountCommand.swift */; };
+		89C7BE102B17647D0042DA11 /* CommandProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE0F2B17647D0042DA11 /* CommandProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +126,9 @@
 		89C7BE042B175F890042DA11 /* DoubleAttackModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleAttackModifier.swift; sourceTree = "<group>"; };
 		89C7BE062B175FA30042DA11 /* IncreaseDefenseModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseDefenseModifier.swift; sourceTree = "<group>"; };
 		89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoBonusModifier.swift; sourceTree = "<group>"; };
+		89C7BE0B2B1764140042DA11 /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
+		89C7BE0D2B1764580042DA11 /* BankAccountCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountCommand.swift; sourceTree = "<group>"; };
+		89C7BE0F2B17647D0042DA11 /* CommandProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -382,6 +388,7 @@
 		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BE0A2B1764080042DA11 /* Command */,
 				89C7BDFF2B175F270042DA11 /* Chain of Responsability */,
 			);
 			path = "Behavioral Patterns";
@@ -397,6 +404,16 @@
 				89C7BE082B175FC40042DA11 /* NoBonusModifier.swift */,
 			);
 			path = "Chain of Responsability";
+			sourceTree = "<group>";
+		};
+		89C7BE0A2B1764080042DA11 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE0B2B1764140042DA11 /* BankAccount.swift */,
+				89C7BE0D2B1764580042DA11 /* BankAccountCommand.swift */,
+				89C7BE0F2B17647D0042DA11 /* CommandProtocol.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +505,7 @@
 				89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
 				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
+				89C7BE0E2B1764580042DA11 /* BankAccountCommand.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
 				89C7BDDC2B14C7930042DA11 /* CodeBuilder.swift in Sources */,
 				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
@@ -506,8 +524,10 @@
 				89C7BE032B175F5D0042DA11 /* CreatureModifier.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
+				89C7BE0C2B1764140042DA11 /* BankAccount.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
 				89C7BDFB2B1622020042DA11 /* CarProxy.swift in Sources */,
+				89C7BE102B17647D0042DA11 /* CommandProtocol.swift in Sources */,
 				89C7BDE32B14CB320042DA11 /* DecoratorSquare.swift in Sources */,
 				89C7BDF12B161E150042DA11 /* User.swift in Sources */,
 				89C7BDEA2B14CEE50042DA11 /* Buffer.swift in Sources */,
