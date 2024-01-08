@@ -71,6 +71,8 @@
 		89C7BE182B4C265A0042DA11 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE172B4C265A0042DA11 /* Memento.swift */; };
 		89C7BE1A2B4C26870042DA11 /* BankAccountMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE192B4C26870042DA11 /* BankAccountMemento.swift */; };
 		89C7BE1D2B4C285B0042DA11 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE1C2B4C285B0042DA11 /* State.swift */; };
+		89C7BE202B4C2A8F0042DA11 /* ListStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE1F2B4C2A8F0042DA11 /* ListStrategy.swift */; };
+		89C7BE222B4C2ABE0042DA11 /* TextProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +141,8 @@
 		89C7BE172B4C265A0042DA11 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		89C7BE192B4C26870042DA11 /* BankAccountMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountMemento.swift; sourceTree = "<group>"; };
 		89C7BE1C2B4C285B0042DA11 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		89C7BE1F2B4C2A8F0042DA11 /* ListStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStrategy.swift; sourceTree = "<group>"; };
+		89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +402,7 @@
 		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BE1E2B4C2A720042DA11 /* Strategy */,
 				89C7BE1B2B4C28360042DA11 /* State */,
 				89C7BE162B4C264A0042DA11 /* Memento */,
 				89C7BE112B477E5E0042DA11 /* Mediator */,
@@ -453,6 +458,15 @@
 				89C7BE1C2B4C285B0042DA11 /* State.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		89C7BE1E2B4C2A720042DA11 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE1F2B4C2A8F0042DA11 /* ListStrategy.swift */,
+				89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */,
+			);
+			path = Strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,6 +547,7 @@
 				89C7BDD42B10E2010042DA11 /* GraphicObject.swift in Sources */,
 				89C7BDEC2B14CF040042DA11 /* ViewPort.swift in Sources */,
 				897BE6632B02687500E7C9F5 /* PersonBuilder.swift in Sources */,
+				89C7BE202B4C2A8F0042DA11 /* ListStrategy.swift in Sources */,
 				897BE6612B0267C100E7C9F5 /* Person.swift in Sources */,
 				89C7BDEE2B14CF180042DA11 /* Console.swift in Sources */,
 				89C7BDA22B02A6170042DA11 /* Protocols.swift in Sources */,
@@ -543,6 +558,7 @@
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
 				89C7BDC72B07B5E80042DA11 /* RendererProtocol.swift in Sources */,
 				89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */,
+				89C7BE222B4C2ABE0042DA11 /* TextProcessor.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
 				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
 				89C7BE0E2B1764580042DA11 /* BankAccountCommand.swift in Sources */,

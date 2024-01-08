@@ -45,21 +45,19 @@ let rules = [
 // MARK: - USAGE
 
 /*
-func main() {
-    var state = State.offHook // starting state
-    while true {
-        print("The phone is currently \(state)")
-        print("Select a trigger:")
+ var state = State.offHook // starting state
+ while true {
+     print("The phone is currently \(state)")
+     print("Select a trigger:")
 
-        for i in 0 ..< rules[state]!.count {
-            let (t, _) = rules[state]![i]
-            print("\(i). \(t)")
-        }
+     for i in 0 ..< rules[state]!.count {
+         let (t, _) = rules[state]![i]
+         print("\(i). \(t)")
+     }
 
-        if let input = Int(readLine()!) {
-            let (_, s) = rules[state]![input]
-            state = s
-        }
-    }
-}
-*/
+     if let input = Int(readLine()!) {
+         let (_, s) = rules[state]![input]
+         state = s
+     }
+ }
+ */
