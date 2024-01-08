@@ -70,6 +70,7 @@
 		89C7BE152B477E9A0042DA11 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE142B477E9A0042DA11 /* ChatRoom.swift */; };
 		89C7BE182B4C265A0042DA11 /* Memento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE172B4C265A0042DA11 /* Memento.swift */; };
 		89C7BE1A2B4C26870042DA11 /* BankAccountMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE192B4C26870042DA11 /* BankAccountMemento.swift */; };
+		89C7BE1D2B4C285B0042DA11 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE1C2B4C285B0042DA11 /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +138,7 @@
 		89C7BE142B477E9A0042DA11 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		89C7BE172B4C265A0042DA11 /* Memento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento.swift; sourceTree = "<group>"; };
 		89C7BE192B4C26870042DA11 /* BankAccountMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountMemento.swift; sourceTree = "<group>"; };
+		89C7BE1C2B4C285B0042DA11 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +398,7 @@
 		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BE1B2B4C28360042DA11 /* State */,
 				89C7BE162B4C264A0042DA11 /* Memento */,
 				89C7BE112B477E5E0042DA11 /* Mediator */,
 				89C7BE0A2B1764080042DA11 /* Command */,
@@ -442,6 +445,14 @@
 				89C7BE192B4C26870042DA11 /* BankAccountMemento.swift */,
 			);
 			path = Memento;
+			sourceTree = "<group>";
+		};
+		89C7BE1B2B4C28360042DA11 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE1C2B4C285B0042DA11 /* State.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -553,6 +564,7 @@
 				89C7BDF32B161E200042DA11 /* FlyweightUser.swift in Sources */,
 				89C7BE032B175F5D0042DA11 /* CreatureModifier.swift in Sources */,
 				89C7BDA82B02A6C70042DA11 /* TeaFactory.swift in Sources */,
+				89C7BE1D2B4C285B0042DA11 /* State.swift in Sources */,
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BE0C2B1764140042DA11 /* BankAccount.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
