@@ -73,6 +73,10 @@
 		89C7BE1D2B4C285B0042DA11 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE1C2B4C285B0042DA11 /* State.swift */; };
 		89C7BE202B4C2A8F0042DA11 /* ListStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE1F2B4C2A8F0042DA11 /* ListStrategy.swift */; };
 		89C7BE222B4C2ABE0042DA11 /* TextProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */; };
+		89C7BE252B4D97AC0042DA11 /* ObserverProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE242B4D97AC0042DA11 /* ObserverProtocols.swift */; };
+		89C7BE272B4D97CB0042DA11 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE262B4D97CB0042DA11 /* Event.swift */; };
+		89C7BE292B4D97E00042DA11 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE282B4D97E00042DA11 /* Subscription.swift */; };
+		89C7BE2B2B4D98490042DA11 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE2A2B4D98490042DA11 /* Demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +147,10 @@
 		89C7BE1C2B4C285B0042DA11 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		89C7BE1F2B4C2A8F0042DA11 /* ListStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStrategy.swift; sourceTree = "<group>"; };
 		89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextProcessor.swift; sourceTree = "<group>"; };
+		89C7BE242B4D97AC0042DA11 /* ObserverProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocols.swift; sourceTree = "<group>"; };
+		89C7BE262B4D97CB0042DA11 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		89C7BE282B4D97E00042DA11 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		89C7BE2A2B4D98490042DA11 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -402,6 +410,7 @@
 		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BE232B4D979B0042DA11 /* Observer */,
 				89C7BE1E2B4C2A720042DA11 /* Strategy */,
 				89C7BE1B2B4C28360042DA11 /* State */,
 				89C7BE162B4C264A0042DA11 /* Memento */,
@@ -467,6 +476,17 @@
 				89C7BE212B4C2ABE0042DA11 /* TextProcessor.swift */,
 			);
 			path = Strategy;
+			sourceTree = "<group>";
+		};
+		89C7BE232B4D979B0042DA11 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE242B4D97AC0042DA11 /* ObserverProtocols.swift */,
+				89C7BE262B4D97CB0042DA11 /* Event.swift */,
+				89C7BE282B4D97E00042DA11 /* Subscription.swift */,
+				89C7BE2A2B4D98490042DA11 /* Demo.swift */,
+			);
+			path = Observer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,9 +577,11 @@
 				89C7BDAF2B02CFF50042DA11 /* Copying.swift in Sources */,
 				89C7BDB32B02D0B80042DA11 /* Employee.swift in Sources */,
 				89C7BDC72B07B5E80042DA11 /* RendererProtocol.swift in Sources */,
+				89C7BE292B4D97E00042DA11 /* Subscription.swift in Sources */,
 				89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */,
 				89C7BE222B4C2ABE0042DA11 /* TextProcessor.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
+				89C7BE2B2B4D98490042DA11 /* Demo.swift in Sources */,
 				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
 				89C7BE0E2B1764580042DA11 /* BankAccountCommand.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
@@ -573,6 +595,7 @@
 				89C7BD9D2B02A0920042DA11 /* Point.swift in Sources */,
 				89C7BE132B477E840042DA11 /* mediatorPerson.swift in Sources */,
 				89C7BDE52B14CB4B0042DA11 /* ColoredShape.swift in Sources */,
+				89C7BE272B4D97CB0042DA11 /* Event.swift in Sources */,
 				89C7BDAA2B02A6FC0042DA11 /* CoffeeFactory.swift in Sources */,
 				89C7BDD82B10E2590042DA11 /* Square.swift in Sources */,
 				89C7BDF72B1621CD0042DA11 /* VehicleProtocol.swift in Sources */,
@@ -584,6 +607,7 @@
 				897BE64C2B025F7C00E7C9F5 /* ContentView.swift in Sources */,
 				89C7BE0C2B1764140042DA11 /* BankAccount.swift in Sources */,
 				89C7BDBC2B07AD480042DA11 /* Point.swift in Sources */,
+				89C7BE252B4D97AC0042DA11 /* ObserverProtocols.swift in Sources */,
 				89C7BDFB2B1622020042DA11 /* CarProxy.swift in Sources */,
 				89C7BE102B17647D0042DA11 /* CommandProtocol.swift in Sources */,
 				89C7BDE32B14CB320042DA11 /* DecoratorSquare.swift in Sources */,
