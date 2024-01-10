@@ -77,6 +77,8 @@
 		89C7BE272B4D97CB0042DA11 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE262B4D97CB0042DA11 /* Event.swift */; };
 		89C7BE292B4D97E00042DA11 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE282B4D97E00042DA11 /* Subscription.swift */; };
 		89C7BE2B2B4D98490042DA11 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE2A2B4D98490042DA11 /* Demo.swift */; };
+		89C7BE2E2B4ECB5F0042DA11 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE2D2B4ECB5F0042DA11 /* Game.swift */; };
+		89C7BE302B4ECBD00042DA11 /* Chess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C7BE2F2B4ECBD00042DA11 /* Chess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -151,6 +153,8 @@
 		89C7BE262B4D97CB0042DA11 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		89C7BE282B4D97E00042DA11 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		89C7BE2A2B4D98490042DA11 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
+		89C7BE2D2B4ECB5F0042DA11 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		89C7BE2F2B4ECBD00042DA11 /* Chess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chess.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +414,7 @@
 		89C7BDFE2B175F070042DA11 /* Behavioral Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				89C7BE2C2B4ECB390042DA11 /* Template */,
 				89C7BE232B4D979B0042DA11 /* Observer */,
 				89C7BE1E2B4C2A720042DA11 /* Strategy */,
 				89C7BE1B2B4C28360042DA11 /* State */,
@@ -487,6 +492,15 @@
 				89C7BE2A2B4D98490042DA11 /* Demo.swift */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		89C7BE2C2B4ECB390042DA11 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				89C7BE2D2B4ECB5F0042DA11 /* Game.swift */,
+				89C7BE2F2B4ECBD00042DA11 /* Chess.swift */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,11 +595,13 @@
 				89C7BDC92B07B61D0042DA11 /* VectorRenderer.swift in Sources */,
 				89C7BE222B4C2ABE0042DA11 /* TextProcessor.swift in Sources */,
 				897BE6672B0269AE00E7C9F5 /* PersonWorkBuilder.swift in Sources */,
+				89C7BE2E2B4ECB5F0042DA11 /* Game.swift in Sources */,
 				89C7BE2B2B4D98490042DA11 /* Demo.swift in Sources */,
 				89C7BDC42B07B0700042DA11 /* LineToPointAdapter.swift in Sources */,
 				89C7BE0E2B1764580042DA11 /* BankAccountCommand.swift in Sources */,
 				89C7BDA42B02A66B0042DA11 /* Tea.swift in Sources */,
 				89C7BDDC2B14C7930042DA11 /* CodeBuilder.swift in Sources */,
+				89C7BE302B4ECBD00042DA11 /* Chess.swift in Sources */,
 				89C7BDB62B06D7190042DA11 /* SingletonDatabase.swift in Sources */,
 				89C7BDB82B06DA650042DA11 /* Monostate.swift in Sources */,
 				89C7BE092B175FC40042DA11 /* NoBonusModifier.swift in Sources */,
